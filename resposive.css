@@ -1,0 +1,89 @@
+@media all and (max-width: 1000px) {
+    header {
+        width: 100%;
+        height: 57px;
+        background-color: rgba(255, 253, 253, 0.7);
+        position:fixed;
+    }
+    .service-item {
+        float: left;
+        width: 50%;
+    }
+    .service-icon {    
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .service-icon img {
+        width: 112px;
+        height: 135px;
+        text-align: center;
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+        border-right: 2px solid red;
+        border-bottom: 2px solid red;
+    }
+    .service-icon p {
+        text-align: center;
+        font-weight: bold;
+      
+    }
+    .service-icon a{
+        font-style: italic;
+    }
+      
+    .services-wrapper {
+        background: rgba(210, 105, 30, 0.041);
+        width: 100%;
+        height: 187px;  
+    }
+      
+    .services-wrapper h2 {
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 23px;
+    }
+      
+    .message-wrapper {
+        text-align: center;
+        width: 100%;
+        height: 225px;
+    }
+    .message-wrapper h1 {
+        font-size: 15px;
+        padding-top: 150px;
+        padding-bottom: 15px;
+    }
+    .message-wrapper a button{
+        background-color: rgba(255, 0, 0, 0.603);
+        font-size: 15px;
+    }
+      
+    .message-wrapper a button:hover {
+        color:  rgba(255, 0, 0, 0.774)
+    }
+    footer {
+        width: 100%;
+        height: 75px;
+        background-color: black;
+    }
+    .footer-contains img{
+        width: 75px;
+        height: 52px;
+        padding: 0 470px;
+    }
+      
+    .footer-contains ul li {
+        text-align: center;
+        padding: 0 236px;
+    }
+    .footer-contains ul a {
+        color: white;
+        margin: 0 15px;
+    }
+      
+    .footer-contains ul a:hover {
+        color: red
+    }
+      
+}
