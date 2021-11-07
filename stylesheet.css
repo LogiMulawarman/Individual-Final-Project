@@ -12,7 +12,7 @@ header {
 }
 
 .navbar{
-  width: 1200px;
+  width: 100%;
   height: 75px;
   margin: auto;
 }
@@ -21,11 +21,16 @@ header {
   float:left;
   height: 70px;
 }
+.menu-icon {
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+}
 .logo {
   color: black;
   font-size: 35px;
   font-family:fantasy;
-  padding-left: 20px;
+  margin-left: 50px;
   float: left;
   padding-top: 10px;
 }
@@ -40,6 +45,7 @@ header {
   margin-left: 150px;
   margin-top: 30px;
 }
+
 .menu ul li a {
   text-decoration: none;
   color: black;
@@ -47,64 +53,59 @@ header {
   font-weight: bold;
   transition: 0.4s ease-in-out;
   margin-right: 100px;
-  margin-left: 25px;
+  margin-left: 55px;
 }
 .menu ul li a:hover{
   color: red;
 }
-
-
-.search {
+.mode button {
   float: right;
-  margin-top: 15px;
-}
-.srch {
-  font-family: 'Times New Roman';
-  width: 200px;
-  height: 40px;
-  background: transparent;
-}
-.search a button {
-  color: red;
+  margin-top: 0;
+  margin-right: 20px;
+  background: black;
+  color: white;
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(images/pexels-nubia-navarro-\(nubikini\)-386025.jpg); 
+  background-image: url(images/main\ background\ normal.jpg); 
   background-size: cover;
   color: rgb(0, 0, 0);
   text-align: center;
   width: 100%;
+  height: 650px;
   border-bottom: 3px solid orangered;
 }
+  
+
 
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 35px;
   letter-spacing: 5px;
-  margin-top: -40px;
-  margin-bottom: 10px;
+  padding-top: 150px;
 
 }
 
 .top-wrapper h2 {
   opacity: 0.7;
   margin-top: 10px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   font-size: 25px;
+  font-style: italic;
 }
 
 
 .btn-wrapper {
   text-align: center;
   margin: 20px 20px;
-  padding-top: -50px;
+  padding-top: 50px;
   padding-bottom: 0;
 }
 
-.btn-wrapper p {
-  margin: 10px 0;
-  padding-left: 15px;
+.container p {
+  margin-top: 70px;
+  background: rgba(255, 255, 255, 0.616);
+  font-size: 20px;
 
 }
 .login input{
@@ -119,15 +120,21 @@ header {
 
 .signup {
   background-color: #be7c7c;
+  width: 180px;
+  height: 20px;
 }
 
 .facebook {
   background-color: #134dca;
-  margin-right: 60px;
+  width: 180px;
+  height: 20px;
+  margin: 0 20px; 
 }
 
 .twitter {
   background-color: #6cb5ec;
+  width: 180px;
+  height: 20px;
 }
 
 .btn {
@@ -145,10 +152,14 @@ header {
 .fa {
   margin-right: 5px;
 }
+  
+
 .service-item {
   float: left;
   width: 25%;
+  height: 325px;
 }
+
 .service-icon {
   text-align: center;
   padding-left: 50px;
@@ -162,7 +173,9 @@ header {
   border-left: 2px solid red;
   border-right: 2px solid red;
   border-bottom: 2px solid red;
+  margin-bottom: -70px;
 }
+
 .service-icon p {
   text-align: center;
   font-weight: bold;
@@ -179,6 +192,7 @@ header {
 
 }
 
+
 .services-wrapper h2 {
   text-align: center;
   padding-top: 50px;
@@ -188,25 +202,104 @@ header {
 .message-wrapper {
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: 600px;
 }
 .message-wrapper h1 {
   font-size: 20px;
   padding-top: 200px;
   padding-bottom: 20px;
+  animation: animasi-text infinite;
+  animation-duration: 2s;
 }
-.message-wrapper a button{
-  background-color: rgba(255, 0, 0, 0.603);
-  font-size: 20px;
+@keyframes animasi-text {
+  0%{color: white;}
+  100%{color:red;}
+}
+.heading a button{
+  padding: 15px 25px;
+  background-color: #04aa6d;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.message-wrapper a button:hover {
-  color:  rgba(255, 0, 0, 0.774)
+
+.heading a button:hover {
+  background-color: #3e8e41;
 }
+.heading a button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.galleries {
+  width: 100%;
+  height: 100px;
+}
+.pictures img {
+  width: 200px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0 10px;
+}
+
+.question {
+  width: 100%;
+  height: 250px;
+  background: #6cb4ec3a;
+}
+.question h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+
+.question a{
+  padding-bottom: 0;
+}
+.question textarea {
+  width: 200px;
+  height: 30px;
+}
+.question input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.question a button{
+  background-color: rgba(250, 242, 242, 0.603);
+  font-size: 15px;
+}
+  
+.question a button:hover {
+  color:  rgb(255, 74, 74)
+}
+.question span {
+  color: red;
+  font-size: 40px;
+  animation: animasi_question infinite;
+  animation-duration: 4s;
+  
+}
+@keyframes animasi_question {
+  0% {color: red;}
+  40% {color: orangered;}
+  75% {color: yellow;}
+  100% {color: green;}
+}
+
 footer {
   width: 100%;
   height: 100px;
   background-color: black;
+  margin-top: 30px;
 }
 .footer-contains img{
   width: 100px;
@@ -226,6 +319,124 @@ footer {
 .footer-contains ul a:hover {
   color: red
 }
+.mode button {
+  float: right;
+  margin-top: 25px;
+  margin-right: 50px
+}
+
+
+
+
+
+
+
+.dark-mode header{
+  background-color: black;
+}
+.dark-mode .logo {
+  color:white;
+}
+.dark-mode .top-wrapper {
+  background-image: url(images/main\ backround\ dark.jpg);
+  color: rgba(255, 255, 255, 0.692);
+}
+.dark-mode .top-wrapper p {
+  background: rgba(0, 0, 0, 0.562);
+}
+.dark-mode .menu ul li a {
+  color:white;
+}
+.dark-mode .services-wrapper {
+  background: black;
+  color: white;
+}
+.dark-mode .message-wrapper {
+  background: black;
+  color: white;
+}
+.dark-mode .services-wrapper .container {
+  background: black;
+  color: white;
+}
+.dark-mode .message-wrapper .question {
+  background: rgb(36, 35, 35);
+  color: rgb(167, 9, 9);
+}
+.dark-mode .services-wrapper .container .services .service-item .service-icon p {
+  background: rgb(44, 44, 44);
+  color: white;
+}
+.dark-mode .mode button {
+  background:white;
+  color:rgb(17, 17, 17);
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1000px) {
+  .menu-icon {
+    display: none;
+  }
+  .menu ul li {
+    float:left;
+    list-style: none;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 30;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  
+  .service-item {
+    float: left;
+    width: 50%;
+    height: 325px;
+  }
+  .mode button {
+    margin-right: 30px;
+  }
+  .btn-wrapper {
+    margin-top: 0;
+  }
+  .twitter {
+    margin-top: 10px;
+  }
+  .message-wrapper h1 {
+    margin-top: 350px;
+  }
+  footer {
+    margin-top: 350px;
+    height: 250px;
+  }
+  .footer-contains img{
+    width: 300px;
+    height: 210px;
+    padding: 0 200px;
+  }
+  
+  .footer-contains ul li {
+    text-align: center;
+    padding: 0 50px;
+  }
+  .footer-contains ul a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+}
 
 
 
@@ -234,8 +445,105 @@ footer {
 
 
 
+@media all and (max-width: 670px) {
+  .menu-icon {
+    display: block;
+  }
+  .logo {
+    font-size: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
 
+  
+  .menu ul li {
+    float:left;
+    list-style: none;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  
+  .menu ul li a {
+    display: none;
+  }
 
+  .mode button {
+    float: right;
+    margin-top: 0;
+    margin-right: 20px;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 20px;
+    padding-top: 100px;
+  
+  }
+  
+  .top-wrapper h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .login a button {
+    margin-top: 20px;
+  }
+  
+  
 
+  
+  .container p {
+    margin-top: 70px;
+    background: rgba(255, 255, 255, 0.616);
+    font-size: 20px;
+  
+  }
+  
+  .facebook {
+    margin: 10px 20px; 
+  }
+   
+  
+  .service-item {
+    float: none;
+    width: 100%;
+    height: 325px;
+  }
+  
+  
+  .galleries {
+    width: 100%;
+    height: 100px;
+    margin-top: 1100px;
+  }
+  .message-wrapper {
+    height: 0;
+  }
+  .message-wrapper h1 {
+    padding-top: 0;
+    margin-top: 50px;
+  }
+  footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 450px;
+    text-align: left;
+  }  
+  
+  .footer-contains img{
+    width: 250px;
+    height: 180px;
+    padding: 0 125px;
+  }
 
+  .footer-contains ul li {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .footer-contains ul a {
+    color: white;
+    margin: 0 10px;
+  }
 
+}
+  

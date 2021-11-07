@@ -3,8 +3,8 @@
 <head>
   <title>Lombok Ok Transportation</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="project.js">
+  <link rel="stylesheet" href="https:/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="project.js" defer></script>
 </head>
 <body>
   <header>
@@ -13,41 +13,44 @@
         <h2 class="logo">Lombok<span>Ok.</span>Trans</h2>            
       </div>  
       <div class="menu">
-          <ul>
-            <li>
-              <a href="#">Services</a>
-              <a href="#">About</a>
-              <a href="#">Home</a>
-            </li>
-          </ul>
+        <a href=# class="menu-icon">
+          <span class="fa fa-bars"></span>
+        </a>
+        <ul>
+          <li>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Home</a>
+          </li>
+        </ul>
       </div>
-      <div class="search">
-        <input class="srch" type="search" name="" placeholder="Type to text">
-        <a href="#"><button class="btn">Search</button></a>
+      <div class="mode">
+        <button onclick="myFunction()">Change Mode</button>
       </div>
     </div>
   </header>  
   <div class="top-wrapper">
     <div class="container">
-      <h1>THE SOLUTION FOR TRAVELING AT LOMBOK ISLAND</h1>
+      <h1>THE TRANSPORTATION FOR TRAVELING AT LOMBOK ISLAND</h1>
       <h2>Your needs are our priority</h2>
       <div class= "login">
         <input class="usrname" type="username" name="" placeholder="your username/email/telp no">
         <input class="pssword" type="password" name="" placeholder="your password">
         <a href="#"><button class="btn">Login</button></a>
       </div>
+      <p>or Sign up with:</p>
       <div class="btn-wrapper">
-        <a href="#" class="btn signup">Sign up with Email</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Sign up with Facebook</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Sign up with Twitter</a>
+        <a href="#" class="btn signup">Email</a>
+        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
+        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
       </div>
     </div>
   </div>
   <div class="services-wrapper">
     <div class="container">
       <div class="heading">
-        <h2>Our Professional Services:</h2>
+        <h2>Our Services:</h2>
       </div>
       <div class="services">
         <div class="service-item">
@@ -83,9 +86,29 @@
     </div>
   </div>
   <div class="message-wrapper">
+    <div class="galleries">
+      <div class="pictures">
+        <marquee>  
+          <img src="images/mandalika fix.jpg">
+          <img src="images/rinjani fix.jpg">
+          <img src="images/gili meno fix.jpg">
+          <img src="images/sembalun fix.jpg">
+          <img src="images/sirkuit.jpeg">
+          <img src="images/polynesia-3021072_1920 copy.jpg">
+        </marquee>  
+      </div>        
+    </div>
     <div class="heading">
       <h1>Lets Explore The Lombok Island with Us</h1>        
       <a href="#"><button class="btn-message">BOOK NOW</button></a>
+    </div>
+    <div class="question">
+      <h2>Any questions<span>?</span></h2>
+        <textarea name="qstn">Please write your questions here!</textarea><br/>
+        <input class="mail" type="email" name="" placeholder="Your email">
+        <div class="send">
+          <a href="#"><button class="btn-send">Send</button></a>  
+        </div>
     </div>
   </div>
   <footer>
